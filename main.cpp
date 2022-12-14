@@ -1,31 +1,27 @@
-#include <iostream>
-#include "lib.h"
+#Includi <iostream>
+#Includi "lib.h"
+Utilizzo dello spazio dei nomi STD;
 
-using namespace std;
+int main() {
+    Elenco char[10][20];
+    Nome del carattere[20];
+    int p = 0;
 
-int main(){
-  char lista[10][20];
-  char nome[20];
-  for (int x = 0; x < 10; x++) {
-    for (int y = 0; y < 20; y++) {
-      lista[x][y] = ' ';
+    for(int i=0;i<10;i++){
+        for(int j=0;j<20;j++) {
+ nome[j] = ' ';
+            list[i][j] = ' ';
+        }
     }
-  }
-  for (int x = 0; x < 20; x++) {
-    nome[x] = ' ';
-  }
-  for (int x = 0; x < 10; x++) {
-    cin >> lista[x];
-  }
-  for (int x = 0; x < 10; x++) {
-    cout << lista[x] << endl;
-  }
-  cin >> nome;
-  int x = bodyguard(lista, nome);
-  if (x < 10) {
-    cout << x;
-  } else if (x == 10) {
-    cout << "non presente";
-  }
-  return 0;
+    for(int i=0;i<10;i++){
+ cin >> lista[i];
+    }
+
+ cin >> nome;
+    if(comp(list;p,name)){
+        cout << p;
+    }altro{
+ cout << "non presente";
+    }
+    ritorno 0;
 }
