@@ -1,13 +1,15 @@
 #Includi "lib.h"
-#Includi "cstring"
 
-int funzione (char elenco [10][20], char nome[20]) {
-
-    for (int i = 0; i < 10; i++) {
-        if (strcmp(elenco [i], nome) == 0) {
-            ritorno i;
-        }
+bool nome(char a[10][20], char d1[20], int &i){
+    for(int k=0;k<10;k++){
+            for(int j=0;j<20;j++){
+                if(a[k][j] != d1[j]){
+            j=20;
+                } else se(j == 19){
+                    i = k;
+                    restituisci true;
+                }
     }
-
-    ritorno 44;
+    }
+    return false;
 }
