@@ -2,27 +2,24 @@
 #include "lib.h"
 using namespace std;
 
-int main(){
-  char a[10][20];
+int main() {
     char d1[20];
-    int i = 0;
-  
-  for(int i=0;i<10;i++){
-  for(int c=0;c<20;c++){
-  d1[c] = ' ';
-    a[i][c] = ' ';
-  }
-  }
-  
-  for(int c=0;c<10;c++){
-        cin >> a[c];
+    char d2[10][20];
+    int i=0;
+    for(int i=0;i<10;i++){
+        for(int j=0;j<20;j++) {
+            d1[j] = ' ';
+            d2[i][j] = ' ';
+        }
     }
-  cin >> d1;
- 
-  if(nome(a,d1,i)==1){
-        cout << i;
-    } else{
-        cout << "non presente" << endl;
+    for(int j=0; j<10; j++){
+        cin>>d2[j];
     }
-  return 0;
+    cin>>d1;
+    if(f(d2, d1, i)==1){
+        cout<<i;
+    }else{
+        cout<<"non presente"<<endl;
+    }
+    return 0;
 }
