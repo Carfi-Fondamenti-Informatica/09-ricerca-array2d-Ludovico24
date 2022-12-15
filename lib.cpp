@@ -1,14 +1,13 @@
-bool f(char d2[10][20], char d1[20],int &i){
-    for(int x=0; x<10; x++){
-        for(int k=0; k<20; k++){
-            if(d2[x][k]!=d1[k]){
-                k=20;
-            }altro{
-                se(k==19){
-                    i=x;
-                    restituisci true;
-                }
-            }
+#include "lib.h"
+bool controllo(char nomi[10][20], char nome[20], int &c){
+    for (int n = 0; n < 10; n++){
+    for (int i = 0; i < 20; i++)
+        {
+            if (nomi [n][i] != nome[i]){
+                i = 20;  }
+            if (i == 19){
+                c = n;
+                return true;}
         }
     }
     return false;
