@@ -1,1 +1,1 @@
-int funzione (char elenco [][20], char nome  [20]);
+bool nome( char [10][20], char [20], int &);
