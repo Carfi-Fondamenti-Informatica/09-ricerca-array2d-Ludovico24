@@ -1,15 +1,15 @@
-#Includi "lib.h"
-
-bool nome(char a[10][20], char d1[20], int &i){
-    for(int k=0;k<10;k++){
-            for(int j=0;j<20;j++){
-                if(a[k][j] != d1[j]){
-            j=20;
-                } else se(j == 19){
-                    i = k;
+bool f(char d2[10][20], char d1[20],int &i){
+    for(int x=0; x<10; x++){
+        for(int y=0; y<20; y++){
+            if(d2[x][y]!=d1[y]){
+                y=20;
+            }altro{
+                se(y==19){
+                    i=x;
                     restituisci true;
                 }
-    }
+            }
+        }
     }
     return false;
 }
