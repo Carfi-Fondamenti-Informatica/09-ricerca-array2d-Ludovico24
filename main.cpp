@@ -2,24 +2,35 @@
 #include "lib.h"
 using namespace std;
 
-int main() {
-    char d1[20];
-    char d2[10][20];
-    int i=0;
-    for(int i=0;i<10;i++){
-        for(int j=0;j<20;j++) {
-            d1[j] = ' ';
-            d2[i][j] = ' ';
+int main(){
+
+    char lista[10][20];
+    char nome[20];
+    int c = 0;
+
+    for (int i = 0; i < 10; i++)
+    {
+        for (int j = 0; j < 20; j++)
+        {
+            nome[j] = ' ';
+            lista[i][j] = ' ';
         }
     }
-    for(int j=0; j<10; j++){
-        cin>>d2[j];
+
+    for (int i = 0; i < 10; i++)
+    {
+        cin >> lista[i];
     }
-    cin>>d1;
-    if(f(d2, d1, i)==1){
-        cout<<i;
-    }else{
-        cout<<"non presente"<<endl;
+    cin >> nome;
+
+    if (controllo(lista, nome, c))
+    {
+        cout << c;
     }
+    else
+    {
+        cout << "non presente"<<endl;
+    }
+
     return 0;
 }
