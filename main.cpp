@@ -1,26 +1,28 @@
-#Includi <iostream>
-#Includi "lib.h"
-Utilizzo dello spazio dei nomi STD;
+#include <iostream>
+#include "lib.h"
+using namespace std;
 
-
-int main() {
-
-    char elenco [10][20];
-    char nome [20];
-
-    for (int i=0; i<10; i++) {
-        cin >> elenco[i];
+int main(){
+  char a[10][20];
+    char d1[20];
+    int i = 0;
+  
+  for(int i=0;i<10;i++){
+  for(int c=0;c<20;c++){
+  d1[c] = ' ';
+    a[i][c] = ' ';
+  }
+  }
+  
+  for(int c=0;c<10;c++){
+        cin >> a[c];
     }
-
-    cin >> nome;
-
-    int a = funzione(elenco, nome);
-    if (a <= 10) {
-        cout << a;
+  cin >> d1;
+ 
+  if(nome(a,d1,i)==1){
+        cout << i;
+    } else{
+        cout << "non presente" << endl;
     }
-    altro {
- cout << "non presente";
-    }
-
-    ritorno 0;
+  return 0;
 }
